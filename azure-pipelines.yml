@@ -12,8 +12,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables: 
- -name: instructor
-  value:Santosh
+ - name: instructor
+   value: Santosh
 
 steps:
 
