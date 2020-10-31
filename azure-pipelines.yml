@@ -16,10 +16,7 @@ variables:
   value:Santosh
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
     echo Greetings From your Instructor [ $(instructor) ]
   displayName: 'Run a multi-line script'
