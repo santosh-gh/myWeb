@@ -18,5 +18,5 @@ variables:
 steps:
 
 - script: |
-    echo Greetings From your Instructor [ $(instructor) ]
+    echo Greetings From your Instructor [ $instructor ]
   displayName: 'Run a multi-line script'
