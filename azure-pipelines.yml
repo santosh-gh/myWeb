@@ -18,7 +18,7 @@ variables:
 steps:
 
 - script: 
-    echo "Greetings From your Instructor [ $(instructor) ]""
+    echo "Greetings From your Instructor [ $(instructor) ]"
   displayName: greetings
 - powershell: |
     Get-ChildItem -Path Env:
