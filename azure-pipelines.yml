@@ -9,7 +9,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 variables: 
  -name: instructor
@@ -18,8 +18,8 @@ variables:
 steps:
 
 - script: 
-    echo Greetings From your Instructor [ $instructor ]
-  displayName: 'Run a multi-line script'
+    echo "Greetings From your Instructor [ $(instructor) ]""
+  displayName: greetings
 - powershell: |
     Get-ChildItem -Path Env:
   displayName: print environment info
