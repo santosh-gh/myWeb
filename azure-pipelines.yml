@@ -21,5 +21,5 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo "Greetings From your Instructor [ $(instructor) ]"
+    echo Greetings From your Instructor [ $(instructor) ]
   displayName: 'Run a multi-line script'
