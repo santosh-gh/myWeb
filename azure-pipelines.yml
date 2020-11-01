@@ -9,13 +9,20 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-16.04'
+
+#pool:
+  #vmImage: 'windows-latest'
 
 variables: 
  - name: instructor
    value: Santosh
+ - name: buildConfiguration
+   value: Release
 
 steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
 
 #- template: dev-pipelines.yml
 - template: qa-pipelines.yml
