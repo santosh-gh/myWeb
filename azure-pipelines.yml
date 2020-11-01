@@ -17,7 +17,7 @@ variables:
 
 steps:
 
-- template: dev-pipelines.yml
+#- template: dev-pipelines.yml
 - template: qa-pipelines.yml
 - template: prod-pipelines.yml
 
