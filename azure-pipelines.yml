@@ -17,6 +17,10 @@ variables:
 
 steps:
 
+- template: dev-pipelines.yml
+- template: qa-pipelines.yml
+- template: prod-pipelines.yml
+
 - script: 
     echo "Greetings From your Instructor [ $(instructor) ]"
   displayName: greetings
